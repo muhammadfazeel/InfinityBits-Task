@@ -1,0 +1,44 @@
+{
+  "db": {
+    "development": {
+      "username": "root",
+      "password": "",
+      "host": "localhost",
+      "port": 2701,
+      "database": "infinity-bits-task"
+    },
+    "testing": {
+      "username": "",
+      "password": "",
+      "host": "",
+      "port": 2701,
+      "database": ""
+    },
+    "staging": {
+      "username": "",
+      "password": "",
+      "host": "",
+      "port": 2701,
+      "database": ""
+    },
+    "production": {
+      "username": "",
+      "password": "",
+      "host": "",
+      "port": 2701,
+      "database": ""
+    }
+  },
+  "FORCE_DB_SYNC": "false",
+  "jwtOptions": {
+    "secretOrKey": "dbseed",
+    "ignoreExpiration": true,
+    "passReqToCallback": true
+  },
+  "Bucket": "zaqoota-images",
+  "awsConfig": {
+    "accessKeyId": "AKIAS5T2HZKPBCHSKJWO",
+    "secretAccessKey": "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",
+    "region": "me-south-1"
+  }
+}
