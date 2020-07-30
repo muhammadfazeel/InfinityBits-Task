@@ -35,10 +35,10 @@
     "ignoreExpiration": true,
     "passReqToCallback": true
   },
-  "Bucket": "zaqoota-images",
+  "Bucket": "",
   "awsConfig": {
-    "accessKeyId": "AKIAS5T2HZKPBCHSKJWO",
-    "secretAccessKey": "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",
+    "accessKeyId": "",
+    "secretAccessKey": "",
     "region": "me-south-1"
   }
 }
