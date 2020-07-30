@@ -203,6 +203,10 @@ function getProductDetails(conditions) {
   })
 }
 
+// ***********************
+// CSV
+// ***********************
+
 function createCSVFile(condition) {
   return db.Product.findAll({
     where: condition,

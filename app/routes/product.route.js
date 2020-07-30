@@ -18,7 +18,7 @@ module.exports = function (app, apiVersion) {
   app.put(route + '/products/update/:id', generalMiddleware.attachBodyAndFiles, productMiddleware.validateUpdateProduct, productController.updateProduct)
 
   // delete product
-  app.delete(route + '/products/:id/delete', passport.authenticate('jwt', { session: false }), productMiddleware.validateDeleteProduct, productController.deleteProduct)
+  app.delete(route + '/products/:id/delete', productMiddleware.validateDeleteProduct, productController.deleteProduct)
 
   // To Get Product Details Against Given Id
   app.get(route + '/products/details/:id', productMiddleware.validateGetProduct, productController.getProductDetails)
