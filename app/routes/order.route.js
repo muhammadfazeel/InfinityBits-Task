@@ -8,9 +8,9 @@ const generalMiddleware = require('../middlewares/general.middleware')
 module.exports = function (app, apiVersion) {
   const route = apiVersion
 
-  // Add Product
+  // Add Order
   app.post(route + '/order/add', orderMiddleware.validateAddOrder, orderController.addOrder)
 
-  // search product
+  // get Order
   app.get(route + '/order', orderMiddleware.validateGetOrder, orderController.getOrders)
 }

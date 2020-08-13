@@ -7,7 +7,6 @@ const config = require('./config')
 const expressValidator = require('express-validator')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const fileUpload = require('express-fileupload')
 
 module.exports = function (app, passport) {
   // Parsers for POST data
@@ -16,8 +15,6 @@ module.exports = function (app, passport) {
     extended: false
   }))
   app.use(expressValidator())
-
-  // app.use(fileUpload())
 
   // enabling cors
   app.use(cors())
